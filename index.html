@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts css  link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Mulish:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome css link-->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+
+    <!-- slick slider css link -->
+    <link rel="stylesheet" href="./vendore/slick/slick.css">
+    <link rel="stylesheet" href="./vendore/slick/slick-theme.css">
+
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="./vendore/bootstrap-4.0.0-dist/css/bootstrap.css">
+
+    <!-- main style css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- site title -->
+    <title>Travel - Figma tamplate</title>
+</head>
+
+<body>
+    <!-- login form start -->
+    <section id="login-form">
+        <div onclick="loginHide()" class="log-back-icon">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="log-info">
+                        <h4>Sing In</h4>
+                        <p>Plan and book your perfect trip with
+                            expert advice, travel tips destination
+                            information from us</p>
+                        <form action="">
+                            <input class="name-input" type="text" placeholder="Please Enter Your Name...">
+                            <input class="pass-input" type="password" placeholder="Please Enter Your Password...">
+                                <input class="forget-pass" type="checkbox" id="remember" name="remember" value="">
+                            <label for="remember"> Remember me</label>
+                            <a href="#">Forget Password</a>
+
+                            <button type="submit">Log In</button>
+                        </form>
+                        <p class="text-center mb-0">- OR -</p>
+                        <button class="mb-0 fb" type="button"><i class="fa fa-facebook" aria-hidden="true"></i> Log In With Facebook</button>
+                        <button class="mb-0 google" type="button"><i class="fa fa-google" aria-hidden="true"></i> Log In With Google</button>
+                    </div>
+                </div>
+                <div class="col-md-6 d-md-block d-none">
+                    <div class="form-img">
+                        <img src="./images/testimonial2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- login form end -->
+
+    <!-- header section start here -->
+    <section id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+                        <div class="mobile-btn responsive-style d-lg-none btn-style">
+                            <a onclick="loginShow()" href="#">Login</a>
+                            <a href="#">Register</a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Destinations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Partner</a>
+                                </li>
+                            </ul>
+                            <div class="login-btn d-lg-block d-md-none d-none btn-style">
+                                <a onclick="loginShow()" href="#">Login</a>
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- header section end here -->
+
+    <!-- hero section start here -->
+    <section id="hero">
+
+        <!-- shape start-->
+        <div class="circle-shape-1">
+        </div>
+        <div class="circle-shape-2">
+        </div>
+        <div class="plus-shape-1">
+            <div class="bar1">
+                <div class="bar2"></div>
+            </div>
+        </div>
+        <!-- shape end -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Explore and Travel</h2>
+                    <div class="finder">
+                        <div class="row">
+                            <div class="col-10">
+                                <p>Holiday finder</p>
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <select name="" id="">
+                                                <option value="Location">Location</option>
+                                                <option value="Location">Location</option>
+                                                <option value="Location">Location</option>
+                                                <option value="Location">Location</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <select name="" id="">
+                                                <option value="Activity">Activity</option>
+                                                <option value="Activity">Activity</option>
+                                                <option value="Activity">Activity</option>
+                                                <option value="Activity">Activity</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <select name="" id="">
+                                                <option value="Grade">Grade</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="date">
+                                        </div>
+                                    </div>
+                                    <div class="btn-style">
+                                        <a href="#">Explore</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-md-block d-none">
+                    <div class="hero-img">
+                        <img src="./images/hero.png" alt="hero.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section end here -->
+
+
+    <!-- about section start here -->
+    <section id="about">
+
+        <!-- shape start -->
+        <div class="circle-shape-4">
+        </div>
+        <div class="plus-shape-2">
+            <div class="bar1">
+                <div class="bar2"></div>
+            </div>
+        </div>
+        <!-- shape end -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-img">
+                        <img src="./images/about.png" alt="about.png">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-content">
+                        <h4>A new way to explore the world </h4>
+                        <p>For decades travellers have reached for Lonely Planet books when looking to plan and execute
+                            their perfect trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+                        <div class="btn-style">
+                            <a href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end here -->
+
+    <!-- feture section start here -->
+    <section id="feture">
+
+        <!-- shape start -->
+        <div class="circle-shape-5">
+        </div>
+        <div class="circle-shape-6">
+        </div>
+        <div class="plus-shape-3">
+            <div class="bar1">
+                <div class="bar2"></div>
+            </div>
+        </div>
+        <!-- shape end -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h4>Featured destinations</h4>
+                </div>
+                <div class="col-4 text-right">
+                    <div class="feture-btn">
+                        <a href="#">View all <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feture-img">
+                        <img src="./images/feture1.png" alt="">
+                        <div class="img-name text-center">
+                            <h5>Raja Ampat</h5>
+                            <p> Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feture-img">
+                        <img src="./images/feture2.png" alt="">
+                        <div class="img-name text-center">
+                            <h5>Fanjingshan</h5>
+                            <p> China</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-md-block d-none">
+                    <div class="feture-img">
+                        <img src="./images/feture3.png" alt="">
+                        <div class="img-name text-center">
+                            <h5>Vevey</h5>
+                            <p> Switzerland</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-md-block d-none">
+                    <div class="feture-img">
+                        <img src="./images/feture4.png" alt="">
+                        <div class="img-name text-center">
+                            <h5>Skadar</h5>
+                            <p> Montenegro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feture section end here -->
+
+    <!-- guide section start here -->
+    <section id="guide">
+
+        <!-- shape start -->
+        <div class="circle-shape-7">
+        </div>
+        <div class="plus-shape-4">
+            <div class="bar1">
+                <div class="bar2"></div>
+            </div>
+        </div>
+        <div class="plus-shape-5">
+            <div class="bar1">
+                <div class="bar2"></div>
+            </div>
+        </div>
+        <!-- shape end -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="guide-content">
+                        <h4>Guides by Thousand Sunny </h4>
+                        <p>Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and
+                            Android) is the ultimate resource before and during a trip.</p>
+                        <div class="btn-style">
+                            <a href="#">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="guide-img">
+                        <img src="./images/guide.png" alt="guide.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- guide section end here -->
+
+    <!-- testimonial section start here -->
+    <section id="testimonial">
+
+        <!-- shape start-->
+        <div class="circle-shape-8">
+        </div>
+        <div class="circle-shape-9">
+        </div>
+        <div class="plus-shape-6">
+            <div class="bar1">
+                <div class="bar2"></div>
+            </div>
+        </div>
+        <!-- shape end -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Testimonials</h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-content">
+                        <div class="rateing-icon">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <p>“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu,
+                            facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
+                        <div class="client-name">
+                            <h5>Edward Newgate</h5>
+                            <p>Founder Circle</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 testi-slider">
+                    <div class="testimonial-slider">
+                        <div class="slider-img">
+                            <img src="./images/testimonial2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="testimonial-slider">
+                        <div class="slider-img">
+                            <img src="./images/testimonial1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="testimonial-slider">
+                        <div class="slider-img">
+                            <img src="./images/testimonial3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="testimonial-slider">
+                        <div class="slider-img">
+                            <img src="./images/testimonial4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial section end here -->
+
+    <!-- trending section start here -->
+    <section id="trend">
+
+        <!-- shape start-->
+        <div class="circle-shape-10">
+        </div>
+        <div class="circle-shape-11">
+        </div>
+        <div class="plus-shape-7">
+            <div class="bar1">
+                <div class="bar2"></div>
+            </div>
+        </div>
+        <!-- shape end -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h4>Trending stories</h4>
+                </div>
+                <div class="col-4 text-right">
+                    <div class="trend-btn">
+                        <a href="#">View all <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="trend-card">
+                        <div class="trend-img">
+                            <img src="./images/trend1.png" alt="">
+                        </div>
+                        <div class="trend-card-text">
+                            <h5>The many benefits of taking a healing holiday</h5>
+                            <p>‘Helaing holidays’ are on the rise tohelp maximise your health and happines...</p>
+                            <a href="#">Read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="trend-card">
+                        <div class="trend-img">
+                            <img src="./images/trend2.png" alt="">
+                        </div>
+                        <div class="trend-card-text">
+                            <h5>The best Kyoto restaurant to try Japanese food</h5>
+                            <p>From tofu to teahouses, here’s our guide to Kyoto’s best restaurants to visit...</p>
+                            <a href="#">Read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="trend-card">
+                        <div class="trend-img">
+                            <img src="./images/trend3.png" alt="">
+                        </div>
+                        <div class="trend-card-text">
+                            <h5>Skip Chichen Itza and head to this remote Yucatan</h5>
+                            <p>It’s remote and challenging to get, but braving the jungle and exploring these ruins
+                                without the...</p>
+                            <a href="#">Read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="trend-card">
+                        <div class="trend-img">
+                            <img src="./images/trend4.png" alt="">
+                        </div>
+                        <div class="trend-card-text">
+                            <h5>Surf’s up at these beginner spots around the world</h5>
+                            <p>If learning to surf has in on your to-do list for a while, the good news is: it’s never
+                                too late...</p>
+                            <a href="#">Read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tranding section end here -->
+
+    <!-- footer section start here -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 d-lg-block d-none">
+                    <div class="footer-div">
+                        <div class="footer-img">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                        <p>Plan and book your perfect trip with
+                            expert advice, travel tips destination
+                            information from us</p>
+                        <span>©2021 Thousand Sunny. All rights reserved by
+                            <br> Bayezid Ahmed</span>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-div text-xl-left text-center">
+                                <div class="footer-div-head">
+                                    <h5>Destinations</h5>
+                                </div>
+                                <div class="footer-nav-link">
+                                    <ul>
+                                        <li><a href="#">Africa</a></li>
+                                        <li><a href="#">Antarctica</a></li>
+                                        <li><a href="#">Asia</a></li>
+                                        <li><a href="#">Europe</a></li>
+                                        <li><a href="#">America</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-div text-xl-left text-center">
+                                <div class="footer-div-head">
+                                    <h5>Destinations</h5>
+                                </div>
+                                <div class="footer-nav-link">
+                                    <ul>
+                                        <li><a href="#">Destination Guides</a></li>
+                                        <li><a href="#">Pictorial & Gifts</a></li>
+                                        <li><a href="#">Special Offers</a></li>
+                                        <li><a href="#">Delivery Times</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-div text-xl-left text-center">
+                                <div class="footer-div-head">
+                                    <h5>Destinations</h5>
+                                </div>
+                                <div class="footer-nav-link">
+                                    <ul>
+                                        <li><a href="#">Adventure Travel</a></li>
+                                        <li><a href="#">Art And Culture</a></li>
+                                        <li><a href="#">Wildlife And Nature</a></li>
+                                        <li><a href="#">Family Holidays</a></li>
+                                        <li><a href="#">Food And Drink</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-lg-none col-md-6 text-center">
+                            <div class="footer-div text-xl-left text-center">
+                                <div class="footer-img mb-auto">
+                                    <img src="./images/logo.png" alt="">
+                                </div>
+                                <p>Plan and book your perfect trip with
+                                    expert advice, travel tips destination
+                                    information from us</p>
+                                <span>©2021 Thousand Sunny. All rights reserved by
+                                    <br> Bayezid Ahmed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-nav text-center">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section end here -->
+
+    <!-- back to top btn start -->
+    <div onclick="backToTop()" id="b-to-t">
+        <div class="back-to-top">
+            <a href="#"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- back to top btn end -->
+
+
+
+    <!-- all script -->
+
+    <!-- jquery script js-->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+
+    <!-- main script js -->
+    <script src="./js/main.js"></script>
+
+    <!-- bootstrap script js -->
+    <script src="./vendore/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+
+    <!-- slick slider script js -->
+    <script src="./vendore/slick/slick.min.js"></script>
+</body>
+
+</html>
